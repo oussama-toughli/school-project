@@ -1,0 +1,102 @@
+//**registration page **/
+.reg {
+	h3 {
+		margin-top: 200px;
+		margin-right: 100px;
+		margin-left: 100px;
+		line-height: 50px;
+		padding-top: 25px;
+		padding-bottom: 30px;
+		background-color: $red-1;
+		border-radius: 50px;
+		color: #ddd9d9;
+	}
+	form.reg-form {
+		margin-right: 300px;
+		margin-left: 300px;
+		margin-top: 50px;
+		margin-bottom: 70px;
+		color: $red-7;
+		border-style: solid;
+		border-radius: 20px;
+		padding: 25px 25px;
+		.form-group {
+			padding-top: 15px;
+			input {
+				text-align: right;
+				border-color: $red-7;
+				box-shadow: none;
+				font-size: 15px;
+				line-height: 20px;
+				color: #acacac;
+			}
+		}
+		.form-check {
+			.form-check-label {
+				padding-bottom: 25px;
+				font-size: 15px;
+			}
+		}
+		button {
+			background-color: #a72117;
+			color: #ffffff;
+		}
+		a {
+			color: #ca6c6c;
+			font-size: 15px;
+			padding-right: 18px;
+		}
+	}
+}
+
+     /**login page **/
+
+     .login {
+        h3 {
+            margin-top: 200px;
+            margin-right: 100px;
+            margin-left: 100px;
+            line-height: 50px;
+            padding-top: 25px;
+            padding-bottom: 30px;
+            background-color: $red-1;
+            border-radius: 50px;
+            color: #ddd9d9;
+        }
+        form.login-form {
+            margin-right: 300px;
+            margin-left: 300px;
+            margin-top: 50px;
+            margin-bottom: 70px;
+            color: $red-7;
+            border-style: solid;
+            border-radius: 20px;
+            padding: 25px 25px;
+            .form-group {
+                padding-top: 15px;
+                input {
+                    text-align: right;
+                    border-color: $red-7;
+                    box-shadow: none;
+                    font-size: 15px;
+                    line-height: 20px;
+                    color: #acacac;
+                }
+            }
+            .form-check {
+                .form-check-label {
+                    padding-bottom: 25px;
+                    font-size: 15px;
+                }
+            }
+            button {
+                background-color: #a72117;
+                color: #ffffff;
+            }
+            a {
+                color: #ca6c6c;
+                font-size: 15px;
+                padding-right: 18px;
+            }
+        }
+    }
