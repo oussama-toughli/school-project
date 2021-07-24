@@ -118,6 +118,110 @@ nav.navbar ul.navbar-nav li a.nav-link {
     border-radius: 10px;
     
   }
+
+  
+.works .works-header h1 {
+    
+  text-align: center;
+  color: #fffdfd;
+  font-size: 30px;
+  padding-top: 15px;
+  padding-bottom: 25px;
+  background-color: 	#a75353;
+  border-style: solid;
+  border-color:#a75353;
+  border-width: thick;
+}
+
+.works {
+background-image: url(../images/school/hJj8DVCjuYxaetK9RbFvjdlzLTJdC52G3pSmbp1EIv38xvII6362566248734894568.jpg);
+background-position: center center;
+background-size: cover;
+
+
+}
+
+.works .overlay {
+background-color: rgba(180, 144, 144, 0.6);
+padding-top: 50px;
+background-size: cover;
+margin-top: -8px;
+
+
+}
+
+
+.works .welcome-text {
+ background-color: firebrick;
+ border-style: solid;
+ border-radius: 25px;
+ border-width: thick;
+ color: #ffffff;
+ line-height: 50px;
+ font-size: 20px;
+ padding: 15px 35px;
+ margin-right: 180px;
+ margin-left: 180px;
+
+
+}
+
+ .works .info .info-tit h3 {
+     font-size: 25px;
+    padding-top: 30px;
+     padding-bottom: 40px;
+     color: #800808;
+     text-align: center;
+    border-style: solid;
+    border-color: rgb(243, 215, 215);
+    border-radius: 50px;
+     background-color: rgb(243, 215, 215);
+     margin-top: 50px;
+     margin-bottom: 50px;
+     
+ }
+
+.works .info .activity {
+   border-style: solid;
+   height: 250px;
+   margin-top: 25px;
+   border-radius: 50px;
+   background-color: #c46d6d;
+   margin-bottom: 50px;
+   
+
+}
+.works .info .activity .activity-body {
+   text-align: center;
+   padding-top: 25px;
+   padding-right: 15px;
+   padding-left: 15px;
+   
+}
+@media (max-width: 992px) {
+ .works .info .activity .activity-body {
+
+   padding-top: 5px;
+   font-size: 16.5px;
+ 
+ }
+
+ .works .welcome-text { 
+   margin-right: 20px;
+   margin-left: 20px;
+ }
+ 
+}
+
+@media (max-width: 762px) {
+ .works .info .activity .activity-body {
+
+   padding-top: 30px;
+   font-size: 18px;
+
+ 
+ }
+}
  
 
 
@@ -129,86 +233,7 @@ nav.navbar ul.navbar-nav li a.nav-link {
   height: 650px;
  }
 
- .works h1 {
-     font-family: "messiri";
-     text-align: center;
-     color: #fffdfd;
-     font-size: 30px;
-     padding-top: 15px;
-     padding-bottom: 25px;
-     background-color: 	#a75353;
-     border-style: solid;
-     border-color:#a75353;
-     border-width: thick;
-    
- }
-
-
-
- .works .image-school img{
-    height:1000px ;
-    opacity: 0.4;
-    width: 100%;
-    transform: translateY(-1%);
-    object-fit: cover;
-    
-    
-    
- }
- .works .centered {
-     background-color: firebrick;
-     border-style: solid;
-     border-radius: 25px;
-     border-width: thick;
-    position: absolute;
-    top: 120%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: #ffffff;
-    line-height: 50px;
-    font-size: 20px;
-    padding: 15px 35px;
-    margin-right: 250px;
-   
-  }
-  
-    .works .container {
-        position: absolute;
-        top: 185%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        
-    }
-    .works .info h3 {
-        font-size: 25px;
-       padding-top: 30px;
-        padding-bottom: 40px;
-        color: #800808;
-        text-align: center;
-       border-style: solid;
-       border-color: rgb(243, 215, 215);
-       border-radius: 50px;
-        background-color: rgb(243, 215, 215);
-        
-    }
-
-  .works .info .activity {
-      border-style: solid;
-      height: 250px;
-      margin-top: 15px;
-      border-radius: 50px;
-      background-color: rgb(196, 109, 94);
-      
-
-  }
-  .works .info .activity .activity-body {
-      text-align: center;
-   
-      padding-top: 25px;
-      padding-right: 15px;
-      padding-left: 15px;
-      
-  }
+ 
   section.students {
     background-image: url(../images/school/depositphotos_56502783-stock-photo-tablet-smartphone-and-coffee-cup.jpg);
     background-position: center center;
@@ -217,7 +242,7 @@ nav.navbar ul.navbar-nav li a.nav-link {
   }
 
   section.students .overlay {
-    background-color: rgba(66, 59, 58, 0.6);
+    background-color: rgba(88, 76, 76, 0.6);
     padding-top: 50px;
   }
   section.students .overlay .s-info .title h3 {
@@ -332,7 +357,7 @@ nav.navbar ul.navbar-nav li a.nav-link {
   }
 
   section.topstudents .overlay {
-    background-color: rgba(39, 12, 12, 0.61);
+    background-color: rgba(65, 31, 31, 0.6);
     padding-top: 50px;
   }
   section.topstudents .overlay .ts-info .title h3 {
@@ -351,17 +376,19 @@ nav.navbar ul.navbar-nav li a.nav-link {
 
   .topstudents .card {
     border-radius: 50px;
-    background-image: url(https://images.unsplash.com/photo-1542966336-22953b5f7404?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=333&q=80  );
+    background-color: rgb(248, 240, 240);
     background-size: cover;
-    color: #ffffff;
+    color: #552121;
     margin-bottom: 70px;
+  
    
   }
   .topstudents .card img {
     border-radius: 50px;
    
-    padding: 30px 30px;
+    padding: 0px;
     border-style: solid;
+    border-width: 20px  ;
   
   }
 
@@ -587,6 +614,11 @@ nav.navbar ul.navbar-nav li a.nav-link {
 
 }
 
+section.students .overlay .s-info .slider .carousel .carousel-indicators {
+
+  bottom: -50px;
+}
+
 }
 
 
@@ -665,71 +697,18 @@ display: inline;
    
   }
 
-  @media (max-width: 993px) {
 
-  .works .image-school img {
-    margin-top: 0px;
-    margin-bottom: 0px;
-    height: 1000px;
-  }
-  
-  .works .centered{
-  
-    font-size: 15px;
-    line-height: 30pxpx;
-    position: absolute;
-    top: 120%;
-    
-  }
-  
- 
-  
-}
-@media (max-width: 989px) {
-  .works .info {
-    margin-right: 10px;
-    margin-left: 10px;
-    margin-top: 100px;
-    margin-bottom: 150px;
-  }
-  .works .info .activity {
-    font-size: 15px;
-  }
-}
+
 
 @media (max-width: 767px) {
  
-.works {
 
-  height: 1600px;
-}
-
-.works .image-school img {
-  margin-top: 7px;
-  height: 1505px;
-}
-
-.works .centered{
-
-  font-size: 15px;
-  line-height: 30pxpx;
-  position: absolute;
-  top: 90%;
-  
-}
-
-.works .info {
-  margin-top: 100px;
-  margin-bottom: 150px;
-}
 
 .students .s-info {
   height: 800px;
   }
   
-  section.students .overlay .s-info .slider .carousel {
-    padding-bottom: 250px;
-  }
+  
   
   .students .slider .carousel-inner .carousel-caption  {
     position: absolute;
@@ -741,6 +720,9 @@ display: inline;
       max-height: 300px;
      
   }
+
+ 
+
   .top-footer .about {
     text-align: center;
   }
