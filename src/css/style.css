@@ -134,7 +134,7 @@ nav.navbar ul.navbar-nav li a.nav-link {
 }
 
 .works {
-background-image: url(../images/school/hJj8DVCjuYxaetK9RbFvjdlzLTJdC52G3pSmbp1EIv38xvII6362566248734894568.jpg);
+background-image: url(../images/top/Eager_Students_Answering_Question_H.jpg);
 background-position: center center;
 background-size: cover;
 
@@ -142,7 +142,7 @@ background-size: cover;
 }
 
 .works .overlay {
-background-color: rgba(180, 144, 144, 0.6);
+background-color: rgba(141, 132, 132, 0.6);
 padding-top: 50px;
 background-size: cover;
 margin-top: -8px;
@@ -152,7 +152,7 @@ margin-top: -8px;
 
 
 .works .welcome-text {
- background-color: firebrick;
+ background-color: #882626;
  border-style: solid;
  border-radius: 25px;
  border-width: thick;
@@ -186,7 +186,9 @@ margin-top: -8px;
    height: 250px;
    margin-top: 25px;
    border-radius: 50px;
-   background-color: #c46d6d;
+   border-width: 5px;
+   border-color: rgb(100, 13, 13);
+   background-color: rgb(209, 167, 167);
    margin-bottom: 50px;
    
 
@@ -196,6 +198,7 @@ margin-top: -8px;
    padding-top: 25px;
    padding-right: 15px;
    padding-left: 15px;
+   color: rgb(0, 0, 0)
    
 }
 @media (max-width: 992px) {
@@ -242,7 +245,7 @@ margin-top: -8px;
   }
 
   section.students .overlay {
-    background-color: rgba(88, 76, 76, 0.6);
+    background-color: rgba(0, 0, 0, 0.678);
     padding-top: 50px;
   }
   section.students .overlay .s-info .title h3 {
@@ -269,7 +272,7 @@ margin-top: -8px;
   }
   section.students .overlay .s-info .slider .carousel .carousel-item .carousel-caption {
     
-    background-image: url(../images/school/125124214-brushed-red-paint-cover-grunge-rough-dirty-background-overlay-aged-grainy-messy-template-distress-ur.jpg);
+    background-image: url(../images/school/abstract-background-red_1078-436.jpg);
     border-style: solid;
     border-radius: 50px;
     border-color:#ffffff;
@@ -277,6 +280,7 @@ margin-top: -8px;
     padding: 80px 70px 35px;
     right: 0;
     left: 0;
+    background-size: cover;
   }
   section.students .overlay .s-info .slider .carousel .carousel-item {
     min-height: 350px;
@@ -349,7 +353,7 @@ margin-top: -8px;
   }
 
   section.topstudents {
-    background-image: url(../images/top/Eager_Students_Answering_Question_H.jpg);
+    background-image: url(../images/school/fear-of-failure-and-success.jpg  );
     background-position: center center;
     background-size:cover;
     margin-top: -80px;
@@ -357,7 +361,7 @@ margin-top: -8px;
   }
 
   section.topstudents .overlay {
-    background-color: rgba(65, 31, 31, 0.6);
+    background-color: rgba(112, 57, 57, 0.6);
     padding-top: 50px;
   }
   section.topstudents .overlay .ts-info .title h3 {
@@ -376,13 +380,17 @@ margin-top: -8px;
 
   .topstudents .card {
     border-radius: 50px;
-    background-color: rgb(248, 240, 240);
+    background-color: rgb(119, 33, 33);
     background-size: cover;
-    color: #552121;
+    color: #772121;
     margin-bottom: 70px;
-  
-   
   }
+    
+  .topstudents .card .card-body p {
+    color:lavender;
+  }
+   
+  
   .topstudents .card img {
     border-radius: 50px;
    
