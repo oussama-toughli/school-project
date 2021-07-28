@@ -1,313 +1,316 @@
 
 @import './variables' ;
 @import './reg&log';
-
+@import './mixins';
 
     
   /**profile nour**/
 
-  .student-profile , .grades , .advice {
-    background-color:$red-6;
+  .student-profile {
+    @include background-color($red-6);
     padding-left: 0px;
+    h3 {
+      margin-top: 150px;
+      padding-top: 20px;
+      padding-bottom: 20px;
+      margin-right: 250px;
+      margin-left: 250px;
+      color: #fff0f0;
+      @include background-color($red-2);
+      border-radius: 40px;
+      line-height: 50px;
+    }
+    .card {
+      border-radius: 10px;
+      @include background-color($red-3);
+      margin-right: 70px;
+      margin-top: 50px;
+      margin-bottom: 50px;
+      .card-header {
+        .profile-img {
+          width: 300px;
+          height: 300px;
+          object-fit: cover;
+          margin: 10px auto;
+          border: 10px solid $red-2;
+          border-radius: 50%;
+        }
+        h2 {
+          font-size: 25px;
+          color: $red-4;
+        }
+        .svg-inline--fa {
+          padding-left: 20px;
+          font-size: 60px;
+          padding-top: 20px;
+        }
+      }
+      p {
+        font-size: 16px;
+        color: $red-5;
+        padding-right: 10px;
+      }
+      span {
+        font-size: 20px;
+        color: $red-4;
+        text-align: center;
+      }
+      .card-body {
+        table {
+          tr {
+            th {
+              color: $red-4;
+            }
+            td {
+              color: $red-5;
+            }
+          }
+        }
+      }
+    }
+    .card.id {
+      margin-left: 90px;
+      margin-right: 120px;
+      margin-top: 90px;
+      width: 700px;
+    }
   }
-
-  .student-profile h3 {
-    margin-top: 150px;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    margin-right: 250px;
-    margin-left: 250px;
-    color: #fff0f0;
-    background-color: $red-2;
-    border-radius: 40px;
-    line-height: 50px;
+  .grades {
+    @include background-color($red-6);
+    padding-left: 0px;
+    .card {
+      border-radius: 10px;
+      @include background-color($red-3);
+      margin-right: 70px;
+      margin-left: 70px;
+      margin-top: 50px;
+      margin-bottom: 70px;
+      h2 {
+        font-size: 25px;
+      }
+      .card-body {
+        .table-bordered {
+          border-color: #dd8181;
+        }
+      }
+    }
+    .card.grades {
+      .card-body {
+        .table-bordered {
+          thead {
+            th {
+              border-width: 3px;
+              border-color: #d4a8a8;
+              @include background-color($red-2);
+              color: #ffffff;
+            }
+          }
+        }
+      }
+    }
   }
-
+  .advice {
+    @include background-color($red-6);
+    padding-left: 0px;
+    padding-bottom: 50px;
+    .success-header {
+      h3 {
+        border-bottom: 2px solid #ac6565;
+        padding-bottom: 20px;
+        margin-right: 400px;
+        margin-left: 400px;
+      }
+    }
+    .success-regular {
+      .success-intro {
+        margin: 30px 120px;
+        @include background-color($red-3);
+        border-radius: 20px;
+        padding: 20px 20px;
+      }
+      .success-text {
+        .svg-inline--fa {
+          margin-left: 15px;
+          color: #d1b7b7;
+        }
+        h4 {
+          @include background-color($red-2);
+          margin-left: 680px;
+          margin-top: 50px;
+          padding-right: 40px;
+          padding-top: 20px;
+          padding-bottom: 20px;
+          border-radius: 20px;
+          color: #f5e5e5;
+        }
+        p {
+          margin-top: 50px;
+          margin-bottom: 50px;
+          margin-right: 15px;
+        }
+      }
+    }
+  }
+  .table-bordered {
+    td {
+      border-color: #dd8181;
+    }
+    th {
+      border-color: #dd8181;
+    }
+  }
   
-  .student-profile .card {
-    border-radius: 10px;
-    background-color: $red-3;
-    margin-right: 70px;
-    margin-top: 50px;
-    margin-bottom: 50px;
-}
-
-.student-profile .card .card-header .profile-img {
-    width: 300px;
-    height: 300px;
-    object-fit: cover;
-    margin: 10px auto;
-    border: 10px solid $red-2;
-    border-radius: 50%;
-}
-
-
-
-.student-profile .card p {
-    font-size: 16px;
-    color: $red-5;
-    padding-right: 10px;
-
-   
- 
-}
-
-.student-profile .card span {
-    font-size: 20px;
-    color: $red-4;
-    text-align: center;
-
- }
- 
- .student-profile .card.id {
-   margin-left: 90px;
-   margin-right: 120px;
-   margin-top: 90px;
-   width: 700px;
-  
- }
-
- .student-profile .card  .card-header h2{
-   font-size:25px ;
-   color: $red-4;
- }
- 
- .student-profile .card  .card-header .svg-inline--fa {
-   padding-left: 20px;
-    font-size: 60px;
-    padding-top: 20px;
-
- }
- 
- .student-profile .card  .card-body  table tr th {
-   color: $red-4;
-  
-   
- } 
-
- .student-profile .card  .card-body  table tr td {
-   color: $red-5;
-  
- }
-
- .grades .card {
-  border-radius: 10px;
-  background-color: $red-3;
-  margin-right: 70px;
-  margin-left: 70px;
-  margin-top: 50px;
-  margin-bottom: 70px;
-}
-
-.grades .card h2 {
-  font-size: 25px;
-}
-
-.grades .card.grades .card-body .table-bordered  thead th {
-  border-width: 3px;
-  border-color:#d4a8a8;
-  background-color: $red-2;
-  color: #ffffff;
-}
-
-.grades .card .card-body .table-bordered, .table-bordered td, .table-bordered th {
-  border-color: #dd8181;
-}
- 
-.advice {
-  padding-bottom: 50px;
-
-}
-
-.advice .success-header h3 {
-  border-bottom: 2px solid #ac6565;
-  padding-bottom: 20px;
-  margin-right: 400px;
-  margin-left: 400px;
-  
-}
-
-.advice .success-regular .success-intro {
-  margin : 30px 120px;
-  background-color: $red-3;
-  border-radius: 20px;
-  padding: 20px 20px;
-}
-
-.advice .success-regular .success-text .svg-inline--fa{
-  margin-left: 15px;
-  color: #d1b7b7;
-}
-.advice .success-regular .success-text h4 {
-  background-color: $red-2;
-  margin-left: 680px;
-  margin-top: 50px;
-  padding-right: 40px;
-  padding-top: 20px;
-  padding-bottom: 20px;
-  border-radius: 20px;
-  color: #f5e5e5;
-}
-
-.advice .success-regular .success-text p {
-  margin-top: 50px;
-  margin-bottom: 50px;
-  margin-right: 15px;
-
-  
-}
-
 
   /**profile omar**/
-
-  .student1-profile , .grades1 , .advice1 {
-    background-color:$yellow-1;
+  .student1-profile {
+    @include background-color($yellow-1);
     padding-left: 0px;
+    h3 {
+      margin-top: 150px;
+      padding-top: 20px;
+      padding-bottom: 20px;
+      margin-right: 250px;
+      margin-left: 250px;
+      color: $red-8;
+      @include background-color($yellow-2);
+      border-radius: 40px;
+      line-height: 50px;
+    }
+    .card {
+      border-radius: 10px;
+       @include background-color($yellow-3);
+      margin-right: 70px;
+      margin-top: 50px;
+      margin-bottom: 50px;
+      .card-header {
+        .profile-img {
+          width: 300px;
+          height: 300px;
+          object-fit: cover;
+          margin: 10px auto;
+          border: 10px solid $yellow-2;
+          border-radius: 50%;
+        }
+        h2 {
+          font-size: 25px;
+          color: $red-4;
+        }
+        .svg-inline--fa {
+          padding-left: 20px;
+          font-size: 60px;
+          padding-top: 20px;
+        }
+      }
+      p {
+        font-size: 16px;
+        color: $red-5;
+        padding-right: 10px;
+      }
+      span {
+        font-size: 20px;
+        color: $red-4;
+        text-align: center;
+      }
+      .card-body {
+        table {
+          tr {
+            th {
+              color: $red-4;
+            }
+          }
+        }
+      }
+    }
+    .card.id {
+      margin-left: 90px;
+      margin-right: 120px;
+      margin-top: 90px;
+      width: 700px;
+    }
+  }
+  .grades1 {
+    @include background-color($yellow-1); 
+    padding-left: 0px;
+    .card {
+      border-radius: 10px;
+      @include background-color($red-3);
+      margin-right: 70px;
+      margin-left: 70px;
+      margin-top: 50px;
+      margin-bottom: 70px;
+      h2 {
+        font-size: 25px;
+      }
+      .card-body {
+        .table-bordered {
+          border-color: #ceb390;
+        }
+      }
+    }
+    .card.grades {
+      .card-body {
+        .table-bordered {
+          thead {
+            th {
+              border-width: 3px;
+              border-color: #ceb390;
+              @include background-color($yellow-2);
+              color: #ffffff;
+            }
+          }
+        }
+      }
+    }
+  }
+  .advice1 {
+    @include background-color($yellow-1);
+    padding-left: 0px;
+    padding-bottom: 50px;
+    .success-header {
+      h3 {
+        border-bottom: 2px solid $yellow-2;
+        padding-bottom: 20px;
+        margin-right: 400px;
+        margin-left: 400px;
+      }
+    }
+    .success-regular {
+      .success-intro {
+        margin: 30px 120px;
+        @include background-color($red-3);
+        border-radius: 20px;
+        padding: 20px 20px;
+      }
+      .success-text {
+        .svg-inline--fa {
+          margin-left: 15px;
+          color: $yellow-4;
+        }
+        h4 {
+          @include background-color($yellow-2);
+          margin-left: 680px;
+          margin-top: 50px;
+          padding-right: 40px;
+          padding-top: 20px;
+          padding-bottom: 20px;
+          border-radius: 20px;
+          color: $red-8;
+        }
+        p {
+          margin-top: 50px;
+          margin-bottom: 50px;
+          margin-right: 15px;
+        }
+      }
+    }
   }
 
-  .student1-profile h3 {
-    margin-top: 150px;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    margin-right: 250px;
-    margin-left: 250px;
-    color:$red-8;
-    background-color: $yellow-2;
-    border-radius: 40px;
-    line-height: 50px;
+  .table-bordered {
+    td {
+      border-color: #ceb390;
+    }
+    th {
+      border-color: #ceb390;
+    }
   }
-
   
-  .student1-profile .card {
-    border-radius: 10px;
-    background-color: $yellow-3;
-    margin-right: 70px;
-    margin-top: 50px;
-    margin-bottom: 50px;
-}
-
-.student1-profile .card .card-header .profile-img {
-    width: 300px;
-    height: 300px;
-    object-fit: cover;
-    margin: 10px auto;
-    border: 10px solid $yellow-2;
-    border-radius: 50%;
-}
-
-
-
-.student1-profile .card p {
-    font-size: 16px;
-    color: $red-5;
-    padding-right: 10px;
-
-   
- 
-}
-
-.student1-profile .card span {
-    font-size: 20px;
-    color: $red-4;
-    text-align: center;
-
- }
- 
- .student1-profile .card.id {
-   margin-left: 90px;
-   margin-right: 120px;
-   margin-top: 90px;
-   width: 700px;
-  
- }
-
- .student1-profile .card  .card-header h2{
-   font-size:25px ;
-   color: $red-4;
- }
- 
- .student1-profile .card  .card-header .svg-inline--fa {
-   padding-left: 20px;
-    font-size: 60px;
-    padding-top: 20px;
-
- }
- 
- .student1-profile .card  .card-body  table tr th {
-   color: $red-4;
-  
-   
- } 
-
- .student-profile .card  .card-body  table tr td {
-   color: $red-5;
-  
- }
-
- .grades1 .card {
-  border-radius: 10px;
-  background-color: $yellow-3;
-  margin-right: 70px;
-  margin-left: 70px;
-  margin-top: 50px;
-  margin-bottom: 70px;
-}
-
-.grades1 .card h2 {
-  font-size: 25px;
-}
-
-.grades1 .card.grades .card-body .table-bordered  thead th {
-  border-width: 3px;
-  border-color:#ceb390;
-  background-color: $yellow-2;
-  color: #ffffff;
-}
-
-.grades1 .card .card-body .table-bordered, .table-bordered td, .table-bordered th {
-  border-color: #ceb390;
-}
- 
-.advice1 {
-  padding-bottom: 50px;
-
-}
-
-.advice1 .success-header h3 {
-  border-bottom: 2px solid $yellow-2;
-  padding-bottom: 20px;
-  margin-right: 400px;
-  margin-left: 400px;
-  
-}
-
-.advice1 .success-regular .success-intro {
-  margin : 30px 120px;
-  background-color: $yellow-3;
-  border-radius: 20px;
-  padding: 20px 20px;
-}
-
-.advice1 .success-regular .success-text .svg-inline--fa{
-  margin-left: 15px;
-  color: $yellow-4;
-}
-.advice1 .success-regular .success-text h4 {
-  background-color: $yellow-2;
-  margin-left: 680px;
-  margin-top: 50px;
-  padding-right: 40px;
-  padding-top: 20px;
-  padding-bottom: 20px;
-  border-radius: 20px;
-  color: $red-8;
-}
-
-.advice1 .success-regular .success-text p {
-  margin-top: 50px;
-  margin-bottom: 50px;
-  margin-right: 15px;
-
-  
-}
-

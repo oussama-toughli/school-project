@@ -345,7 +345,7 @@ margin-top: -8px;
     z-index: 10;
   }
   section.students .overlay .s-info .slider .carousel .carousel-control-prev {
-    transform: translate(-50%, -80%);
+    transform: translate(-50%,- 48%);
     
   }
   section.students{
@@ -615,16 +615,18 @@ margin-top: -8px;
 @media (max-width: 500px) {
 
   .carousel-inner{
-    height: 400px;
+    height: 500px;
   }
 .carousel-inner img{
-  height: 400px;
 
+  margin-top: 30px;
+  margin-bottom: 0px;
+  height: 500px;
 }
 
 section.students .overlay .s-info .slider .carousel .carousel-indicators {
 
-  bottom: -50px;
+  bottom: 0px;
 }
 
 }
@@ -669,6 +671,17 @@ display: inline;
     margin-left: 20px;
   }
   .advice .success-regular .success-text h4 {
+    margin-left: 20px;
+    margin-top: 50px;
+    padding-right: 20px;
+ 
+  }
+
+  .advice1 .success-regular .success-intro {
+    margin-right: 20px;
+    margin-left: 20px;
+  }
+  .advice1 .success-regular .success-text h4 {
     margin-left: 20px;
     margin-top: 50px;
     padding-right: 20px;
@@ -734,7 +747,12 @@ display: inline;
   .top-footer .about {
     text-align: center;
   }
-  
+
+  footer .top-footer .map { 
+    margin-top: 20px;
+    margin-bottom: -100px;
+    text-align: center;
+  }
   
   
   .student-profile h3{
@@ -757,6 +775,16 @@ display: inline;
     margin-right: 10px;
     margin-left: 10px;
   }
+
+  .student-profile .card-body {
+    text-align: center;
+  }
+
+  .student1-profile .card-body {
+    text-align: center;
+  }
+
+
     .advice .success-header h3 {
       margin-right: 20px;
       margin-left: 20px;
